@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Inter:wght@600;700&display=swap");
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #000000;
+    }
+
+    nav {
+      background: linear-gradient(to right, #f6ff46, #e08151);
+      overflow: hidden;
+    }
+
+    .left-container {
+      float: left;
+    }
+
+    .right-container {
+      float: right;
+    }
+
+    nav a {
+      display: inline-block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      border-radius: 10px;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #ddd;
+      color: rgb(0, 0, 0);
+    }
+
+    .logo-img {
+      padding-top: 3px;
+      padding-left: 10px;
+      height: 50px;
+      margin-right: 20px;
+    }
+
+    /* New styles for the card */
+    .about-section {
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      border-radius: 15px;
+      background-color: #000000;
+      margin: 20px;
+    }
+
+    .about-section img {
+      border-radius: 10px;
+    }
+
+    .text-section {
+      max-width: 60%;
+    }
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* 3 columns */
+      gap: 20px;
+      padding: 20px;
+      margin-left: 160px;
+      width: 1525px;
+    }
+
+    .card {
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      padding: 15px;
+      text-align: center;
+    }
+
+    .card iframe {
+      width: 100%;
+      height: 200px; /* Adjust as needed */
+      border: none;
+    }
+
+    .card-title {
+      margin-top: 10px;
+      font-size: 18px;
+      color: #333333;
+    }
+
+    .card-description {
+      font-size: 14px;
+      color: #666666;
+    }
+ 
+
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="left-container">
+    <img class="logo-img" src="/Portfolio-Website.github.io-main/portfolio-images/ppf.png" alt="Your Logo">
+  </div>
+
+  <div class="right-container">
+    <a href="/Portfolio-Website.github.io-main/index.html">Home</a>
+    <a href="/Portfolio-Website.github.io-main/html/aboutme.html">About Me</a>
+    <a href="/Portfolio-Website.github.io-main/html/editingtools.html">Editing Tools</a>
+    <a href="/Portfolio-Website.github.io-main/html/resume.html">Resume</a>
+    <a href="/Portfolio-Website.github.io-main/html/clientschannels.html">Clients & Channels</a>
+    <a href="#education">View Edits</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+<!-- New content for "Editing Tools" section -->
+<div class="about-section" id="aboutme">
+  <div class="text-section">
+    <h2 style="color:#ff8c00; font-size: 40px;">VIDEO EDITING JOURNEY</h2>
+    
+    <div class="card-grid">
+        <!-- Card 1 -->
+        <div class="card">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/BBWGGHaxlps?si=cSoOw6uTkkZ6clNh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <div class="card-title">This Man Multiplied His Money</div>
+          <p class="card-description">Benjamin Lee</p>
+        </div>
+        <div class="card">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/cOKNyV4yVac?si=28pXyDDOycVxnaqU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="card-title">Top Innovative Gear for Every Outdoor</div>
+            <p class="card-description">Camping Gear Junkie</p>
+          </div>
+          <div class="card">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/FRi0jCaCM5o?si=9OWOMws8-v5eIOxY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="card-title">15 Must Have Camping Gear on AMAZON</div>
+            <p class="card-description">Camping Gear Junkie</p>
+          </div>
+          <div class="card">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/r_CTitd-8-E?si=eFUaFijNcppT4MqL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="card-title">Outdoor Exploration Made Easy</div>
+            <p class="card-description">Camping Gear Junkie</p>
+          </div>
+          <div class="card">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/YTCzmUbMgIo?si=vojm1QSdOl-4gmeh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="card-title">5 Must-Have Camping Gear Under $20</div>
+            <p class="card-description">Camping Gear Junkie</p>
+          </div>
+          <div class="card">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/CxR9MZapZiw?si=R9-mjXfQVWINvUbY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="card-title">15 Amazing Camping Gear </div>
+            <p class="card-description">Camping Gear Junkie</p>
+          </div>
+    </div>
+    <div class="card-grid">
+        <!-- Card 1 -->
+        <div class="card">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/pJg47Qx_NMs?si=boJ9Bud2NJYU7shO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <div class="card-title">Cryptocurrency Investment Strategies</div>
+          <p class="card-description">Passive Income</p>
+        </div>
+        <div class="card">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/eEUgPbyPOss?si=8pD2jDJB5hwScRPE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="card-title">Unlock Wealth: 5 Smart Debt Strategies </div>
+            <p class="card-description">Passive Income</p>
+          </div>
+          <div class="card">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/L0pU-kVXNvE?si=O3o8Pq9YQuG7q7Uu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="card-title">Using Your Voice to portray your Passion</div>
+            <p class="card-description">Business in the Raw</p>
+          </div>
+          <div class="card">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/zR0xVBLpB3Y?si=PBJHUcvpI8CrvjnG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="card-title">Pro tips to Manage your Pack Weight Effiently</div>
+            <p class="card-description">Camping Gear Junkie</p>
+          </div>
+          <div class="card">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/k6PS_V0N2C4?si=s4jYqjEVLr7nlXw6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="card-title">Business in the Raw Teaser</div>
+            <p class="card-description">Business in the Raw</p>
+          </div>
+          <div class="card">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ZdzhZHPfMJk?si=5PsfgyNqAt2emoew" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="card-title">Top 10 Game Changing Camping Gear Boost Your Wilderness Excursions</div>
+            <p class="card-description">Camping Gear Junkie</p>
+          </div>
+    </div>
+        
+
+
+
+</body>
+</html>

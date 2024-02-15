@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Inter:wght@600;700&display=swap");
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #000000;
+    }
+
+    nav {
+      background: linear-gradient(to right, #f6ff46, #e08151);
+      overflow: hidden;
+    }
+
+    .left-container {
+      float: left;
+    }
+
+    .right-container {
+      float: right;
+    }
+
+    nav a {
+      display: inline-block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      border-radius: 10px;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #ddd;
+      color: rgb(0, 0, 0);
+    }
+
+    .logo-img {
+      padding-top: 3px;
+      padding-left: 10px;
+      height: 50px;
+      margin-right: 20px;
+    }
+/* Add these styles to your existing styles */
+
+:root {
+    --border-gradient-onyx: #d6d4c9;
+    --bg-gradient-jet: #d3d394;
+    --light-gray: #000000;
+    --fs-6: 16px;
+    --fw-3: 400;
+    --shadow-2: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.service-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    
+}
+
+.service-item {
+    position: relative;
+    background: var(--border-gradient-onyx);
+    padding: 50px;
+    border-radius: 14px;
+    box-shadow: var(--shadow-2);
+    z-index: 1;margin-right: 10%;
+    
+}
+
+.service-item::before {
+    content: "";
+    position: absolute;
+    inset: 1px;
+    background: var(--bg-gradient-jet);
+    border-radius: inherit;
+    z-index: -1;
+}
+
+.service-icon-box {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.service-icon-box img {
+    width: 80px; /* Adjust the width as needed */
+    height: auto;
+}
+
+.service-content-box {
+    text-align: center;
+}
+
+.service-item-title {
+    margin-bottom: 7px;
+}
+
+.service-item-text {
+    color: var(--light-gray);
+    font-size: var(--fs-6);
+    font-weight: var(--fw-3);
+    line-height: 1.6;
+}
+.button-container {
+        text-align: center;
+        margin-top: 20px;
+        padding-top: 20px;
+    }
+
+    .button {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        text-align: center;
+        text-decoration: none;
+        background-color: #ff8c00;
+        color: #fff;
+        border-radius: 8px;
+        transition: background-color 0.3s;
+    }
+
+    .button:hover {
+        background-color: #e07b00;
+    }
+ 
+
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="left-container">
+    <img class="logo-img" src="/Portfolio-Website.github.io-main/portfolio-images/ppf.png" alt="Your Logo">
+  </div>
+
+  <div class="right-container">
+    <a href="/Portfolio-Website.github.io-main/index.html">Home</a>
+    <a href="/Portfolio-Website.github.io-main/html/aboutme.html">About Me</a>
+    <a href="/Portfolio-Website.github.io-main/html/editingtools.html">Editing Tools</a>
+    <a href="/Portfolio-Website.github.io-main/html/resume.html">Resume</a>
+    <a href="/Portfolio-Website.github.io-main/html/clientschannels.html">Clients & Channels</a>
+    <a href="/Portfolio-Website.github.io-main/html/viewedits.html">View Edits</a>
+    <a href="/Portfolio-Website.github.io-main/html/contact.html">Contact</a>
+  </div>
+</nav>
+<!-- New content for "Editing Tools" section -->
+<div class="about-section" id="aboutme">
+  <div class="text-section">
+    <h2 style="color:#ff8c00; font-size: 40px; padding-left: 800px; padding-top: 50px;">EDITING TOOLS</h2>
+    
+  </div>
+  
+  <section class="service">
+
+    <h3 class="h3 service-title">Editing Tools</h3> 
+
+    <ul class="service-list">
+
+        <li class="service-item">
+
+            <div class="service-icon-box">
+                <img src="/Portfolio-Website.github.io-main/portfolio-images/premiere.png" alt="design icon" width="80">
+            </div>
+            
+
+            <div class="service-content-box">
+                <h4 class="h4 service-item-title" style="font-size: 30px;">ADOBE PREMIERE PRO</h4>
+
+                <p class="service-item-text">
+                    The most modern and high-quality design made at a professional level.
+                </p>
+            </div>
+            <div class="button-container">
+                    <a href="https://www.adobe.com/sg/products/premiere.html" class="button">Download now!</a>
+                </div>
+               
+
+        </li>
+       
+
+        <li class="service-item">
+
+            <div class="service-icon-box">
+                <img src="/Portfolio-Website.github.io-main/portfolio-images/capcut.png" alt="Web development icon" width="80">
+            </div>
+
+            <div class="service-content-box">
+                <h4 class="h4 service-item-title" style="font-size: 30px;">CAPCUT</h4>
+
+                <p class="service-item-text">
+                    My main editing tool where i put animations, text and other effects.
+                    
+                </p>
+            </div>
+            <div class="button-container">
+              <a href="https://www.capcut.com/my-edit?start_tab=video" class="button">Download Now!</a>
+          </div>
+         
+            
+
+        </li>
+
+        <li class="service-item">
+
+            <div class="service-icon-box">
+                <img src="/Portfolio-Website.github.io-main/portfolio-images/photoshop.png" alt="mobile app icon" width="80">
+            </div>
+
+            <div class="service-content-box">
+                <h4 class="h4 service-item-title"style="font-size: 30px;" >ADOBE PHOTOSHOP</h4>
+
+                <p class="service-item-text">
+                    Creating thumbnails and other graphic designs needed for the videos.
+                </p> 
+            </div>
+            <div class="button-container">
+              <a href="https://www.adobe.com/ph_en/products/photoshop.html" class="button">Download now!</a>
+          </div>
+         
+
+        </li>
+
+        <li class="service-item">
+
+            <div class="service-icon-box">
+                <img src="/Portfolio-Website.github.io-main/portfolio-images/canva.png" alt="camera icon" width="80">
+            </div>
+
+            <div class="service-content-box">
+                <h4 class="h4 service-item-title" style="font-size: 30px;">CANVA</h4>
+
+                <p class="service-item-text">
+                    I make high-quality photos of any category at a professional level.
+                </p>
+            </div>
+            <div class="button-container">
+              <a href="https://www.canva.com/en_ph/" class="button">Download Now!</a>!</a>
+          </div>
+         
+
+        </li>
+
+    </ul>
+
+</section>
+
+
+</body>
+</html>
+
+
+

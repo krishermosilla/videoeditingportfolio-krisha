@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Inter:wght@600;700&display=swap");
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #000000;
+    }
+
+    nav {
+      background: linear-gradient(to right, #f6ff46, #e08151);
+      overflow: hidden;
+    }
+
+    .left-container {
+      float: left;
+    }
+
+    .right-container {
+      float: right;
+    }
+
+    nav a {
+      display: inline-block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      border-radius: 10px;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #ddd;
+      color: rgb(0, 0, 0);
+    }
+
+    .logo-img {
+      padding-top: 3px;
+      padding-left: 10px;
+      height: 50px;
+      margin-right: 20px;
+    }
+/* Add these styles to your existing styles */
+
+:root {
+    --border-gradient-onyx: #d6d4c9;
+    --bg-gradient-jet: #d3d394;
+    --light-gray: #000000;
+    --fs-6: 16px;
+    --fw-3: 400;
+    --shadow-2: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.service-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    
+}
+
+.service-item {
+    position: relative;
+    background: var(--border-gradient-onyx);
+    padding: 50px;
+    border-radius: 14px;
+    box-shadow: var(--shadow-2);
+    z-index: 1;margin-right: 10%;
+    height: 300px;
+    
+}
+
+.service-item::before {
+    content: "";
+    position: absolute;
+    inset: 1px;
+    background: var(--bg-gradient-jet);
+    border-radius: inherit;
+    z-index: -1;
+}
+
+.service-icon-box {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.service-icon-box img {
+    width: 150px; /* Adjust the width as needed */
+    height: auto;
+}
+
+.service-content-box {
+    text-align: center;
+}
+
+.service-item-title {
+    margin-bottom: 7px;
+}
+
+.service-item-text {
+    color: var(--light-gray);
+    font-size: var(--fs-6);
+    font-weight: var(--fw-3);
+    line-height: 1.6;
+}
+.button-container {
+        text-align: center;
+        margin-top: 10px;
+        padding-top: 5px;
+    }
+
+    .button {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        text-align: center;
+        text-decoration: none;
+        background-color: #ff8c00;
+        color: #fff;
+        border-radius: 8px;
+        transition: background-color 0.3s;
+    }
+
+    .button:hover {
+        background-color: #e07b00;
+    }
+ 
+
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="left-container">
+    <img class="logo-img" src="/Portfolio-Website.github.io-main/portfolio-images/ppf.png" alt="Your Logo">
+  </div>
+
+  <div class="right-container">
+    <a href="/Portfolio-Website.github.io-main/index.html">Home</a>
+    <a href="/Portfolio-Website.github.io-main/html/aboutme.html">About Me</a>
+    <a href="/Portfolio-Website.github.io-main/html/editingtools.html">Editing Tools</a>
+    <a href="/Portfolio-Website.github.io-main/html/resume.html">Resume</a>
+    <a href="/Portfolio-Website.github.io-main/html/clientschannels.html">Clients & Channels</a>
+    <a href="/Portfolio-Website.github.io-main/html/viewedits.html">View Edits</a>
+    <a href="/Portfolio-Website.github.io-main/html/contact.html">Contact</a>
+  </div>
+</nav>
+<!-- New content for "Editing Tools" section -->
+<div class="about-section" id="aboutme">
+  <div class="text-section">
+    <h2 style="color:#ff8c00; font-size: 40px; padding-left: 900px; padding-top: 50px;">CLIENTS</h2>
+    
+  </div>
+  
+  <section class="service">
+
+    <h3 class="h3 service-title">Editing Tools</h3>
+
+    <ul class="service-list">
+
+        <li class="service-item">
+
+            <div class="service-icon-box">
+                <img src="/Portfolio-Website.github.io-main/portfolio-images/male1.webp" alt="design icon" width="80">
+            </div>
+            
+
+            <div class="service-content-box">
+                <h4 class="h4 service-item-title" style="font-size: 30px;">BAYAN RASOLLI</h4>
+
+                <p class="service-item-text">
+                    Worked as a image to text transcriptionist for tech company.
+                </p>
+            </div>
+            
+               
+
+        </li>
+       
+
+        <li class="service-item">
+
+            <div class="service-icon-box">
+                <img src="/Portfolio-Website.github.io-main/portfolio-images/male2.png" alt="Web development icon" width="80">
+            </div>
+
+            <div class="service-content-box">
+                <h4 class="h4 service-item-title" style="font-size: 30px;">ZACK BORDUEX</h4>
+
+                <p class="service-item-text">
+                    Worked as a podcast video editor and thumbnail creator for YouTube channel.
+                    
+                </p>
+            </div>
+           
+            
+
+        </li>
+        <li class="service-item">
+
+            <div class="service-icon-box">
+                <img src="/Portfolio-Website.github.io-main/portfolio-images/male6.png" alt="Web development icon" width="80">
+            </div>
+
+            <div class="service-content-box">
+                <h4 class="h4 service-item-title" style="font-size: 30px;">BENJAMIN LEE</h4>
+
+                <p class="service-item-text">
+                    Worked as a podcast video editor and thumbnail creator for YouTube channe about trading.
+                    
+                </p>
+            </div>
+           
+            
+
+        </li>
+        <li class="service-item">
+
+            <div class="service-icon-box">
+                <img src="/Portfolio-Website.github.io-main/portfolio-images/female1.png" alt="Web development icon" width="80">
+            </div>
+
+            <div class="service-content-box">
+                <h4 class="h4 service-item-title" style="font-size: 30px;">LAKAYLA FRIDIE</h4>
+
+                <p class="service-item-text">
+                    Worked as a podcast video editor and thumbnail creator for YouTube channel about passive income.
+                    
+                </p>
+            </div>
+           
+            
+
+        </li>
+
+        <li class="service-item">
+
+            <div class="service-icon-box">
+                <img src="/Portfolio-Website.github.io-main/portfolio-images/male3.png" alt="mobile app icon" width="80">
+            </div>
+
+            <div class="service-content-box">
+                <h4 class="h4 service-item-title"style="font-size: 30px;" >AMOL MALANKHAR</h4>
+
+                <p class="service-item-text">
+                    Worked as a virtual assistant.
+                </p> 
+            </div>
+            
+           
+
+        </li>
+
+        <li class="service-item">
+
+            <div class="service-icon-box">
+                <img src="/Portfolio-Website.github.io-main/portfolio-images/male5.png" alt="camera icon" width="80">
+            </div>
+
+            <div class="service-content-box">
+                <h4 class="h4 service-item-title" style="font-size: 30px;">NEHAL SHAH</h4>
+
+                <p class="service-item-text">
+                    Worked as a video editor and thumbnail creator of a Youtube Channel about camping gears.
+                </p>
+            </div>
+            
+
+        </li>
+
+    </ul>
+
+</section>
+<div class="about-section" id="aboutme">
+    <div class="text-section">
+      <h2 style="color:#ff8c00; font-size: 40px; padding-left: 900px; padding-top: 50px;">CHANNELS</h2>
+      
+    </div>
+<section class="service">
+
+    <h3 class="h3 service-title">Editing Tools</h3>
+
+    <ul class="service-list">
+
+        <li class="service-item">
+
+            <div class="service-icon-box">
+                <img src="/Portfolio-Website.github.io-main/portfolio-images/LOGO1.jpeg" alt="design icon" width="80" style="border-radius: 20px;">
+            </div>
+            
+
+            <div class="service-content-box">
+                <h4 class="h4 service-item-title" style="font-size: 30px;">CAMPING GEAR JUNKIE</h4>
+                <div class="button-container">
+                    <a href="https://www.youtube.com/@CampingGearJunkie" class="button">Visit</a>
+                </div>
+                
+            </div>
+            
+               
+
+        </li>
+       
+
+        <li class="service-item">
+
+            <div class="service-icon-box">
+                <img src="/Portfolio-Website.github.io-main/portfolio-images/logo2.jpeg" alt="Web development icon" width="80" style="border-radius: 20px;">
+            </div>
+
+            <div class="service-content-box">
+                <h4 class="h4 service-item-title" style="font-size: 30px;">BENJAMIN LEE</h4>
+                <div class="button-container">
+                    <a href="https://www.youtube.com/@CampingGearJunkie" class="button">Visit</a>
+                </div>
+                
+            </div>
+           
+            
+
+        </li>
+
+        <li class="service-item">
+
+            <div class="service-icon-box">
+                <img src="/Portfolio-Website.github.io-main/portfolio-images/logo3.jpeg" alt="mobile app icon" width="80" style="border-radius: 20px;">
+            </div>
+
+            <div class="service-content-box">
+                <h4 class="h4 service-item-title"style="font-size: 30px;" >100TV</h4>
+                <div class="button-container">
+                    <a href="https://www.youtube.com/@CampingGearJunkie" class="button">Visit</a>
+                </div>
+            </div>
+            
+           
+
+        </li>
+
+        <li class="service-item">
+
+            <div class="service-icon-box">
+                <img src="/Portfolio-Website.github.io-main/portfolio-images/logo4.jpeg" alt="camera icon" width="80" style="border-radius: 20px;">
+            </div>
+
+            <div class="service-content-box">
+                <h4 class="h4 service-item-title" style="font-size: 30px;">STONED FRUIT</h4>
+
+                <div class="button-container">
+                    <a href="https://www.youtube.com/@CampingGearJunkie" class="button">Visit</a>
+                </div>
+            </div>
+            
+
+        </li>
+        <li class="service-item">
+
+            <div class="service-icon-box">
+                <img src="/Portfolio-Website.github.io-main/portfolio-images/logo6.jpeg" alt="camera icon" width="80" style="border-radius: 20px;">
+            </div>
+
+            <div class="service-content-box">
+                <h4 class="h4 service-item-title" style="font-size: 30px;">PASSIVE INCOME</h4>
+
+                <div class="button-container">
+                    <a href="https://www.youtube.com/@CampingGearJunkie" class="button">Visit</a>
+                </div>
+            </div>
+            
+
+        </li>
+
+    </ul>
+
+</body>
+</html>
+
+
+

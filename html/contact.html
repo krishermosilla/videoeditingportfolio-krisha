@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Inter:wght@600;700&display=swap");
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #000000;
+    }
+
+    nav {
+      background: linear-gradient(to right, #f6ff46, #e08151);
+      overflow: hidden;
+    }
+
+    .left-container {
+      float: left;
+    }
+
+    .right-container {
+      float: right;
+    }
+
+    nav a {
+      display: inline-block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      border-radius: 10px;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #ddd;
+      color: rgb(0, 0, 0);
+    }
+
+    .logo-img {
+      padding-top: 3px;
+      padding-left: 10px;
+      height: 50px;
+      margin-right: 20px;
+    }
+
+    /* New styles for the card */
+    .about-section {
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      border-radius: 15px;
+      background-color: #000000;
+      margin: 20px;
+    }
+
+    .about-section img {
+      border-radius: 10px;
+    }
+
+    .text-section {
+      max-width: 60%;
+    }
+ /* Styles for the contact form */
+ .contact-form {
+      background-color: #e2dfdf;
+      padding: 20px;
+      margin: 20px;
+      border-radius: 10px;
+    }
+
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #6b2424;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    .contact-form input[type=submit] {
+      width: 100%;
+      background-color: #000000;
+      color: rgb(255, 255, 255);
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .contact-form input[type=submit]:hover {
+      background-color: #45a049;
+    }
+
+    .centered-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-left: 250px;
+      margin-top: 2px;
+      height: 690px;
+    }
+
+    .map-contact-container {
+     
+      margin: 0 auto; /* Centers the card */
+      padding: 20px;
+      background-color: #e1d3a0; /* Background color for the card */
+      border-radius: 10px;
+      width: 1400px;
+    }
+ 
+
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="left-container">
+    <img class="logo-img" src="/Portfolio-Website.github.io-main/portfolio-images/ppf.png" alt="Your Logo">
+  </div>
+
+  <div class="right-container">
+    <a href="/Portfolio-Website.github.io-main/index.html">Home</a>
+    <a href="/Portfolio-Website.github.io-main/html/aboutme.html">About Me</a>
+    <a href="/Portfolio-Website.github.io-main/html/editingtools.html">Editing Tools</a>
+    <a href="/Portfolio-Website.github.io-main/html/resume.html">Resume</a>
+    <a href="/Portfolio-Website.github.io-main/html/clientschannels.html">Clients & Channels</a>
+    <a href="/Portfolio-Website.github.io-main/html/viewedits.html">View Edits</a>
+    <a href="/Portfolio-Website.github.io-main/html/contact.html">Contact</a>
+  </div>
+</nav>
+<!-- New content for "Editing Tools" section -->
+<div class="about-section" id="aboutme">
+  <div class="text-section">
+    <h2 style="color:#ff8c00; font-size: 40px;">CONTACT</h2>
+    <div class="centered-card">
+        <div class="map-contact-container">
+          <!-- Map Section -->
+          <div class="map">
+            <!-- Existing map iframe -->
+            <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3922.232122208867!2d124.01886877532587!3d10.561000389574962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a9b13b65419f75%3A0xca37ee4eaebc1eb!2sDunggoan%20Eskina%20Dancar!5e0!3m2!1sen!2sph!4v1704540086131!5m2!1sen!2sph" width="1390" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style="border-radius: 10px;"></iframe>
+          </div>
+          <div class="contact-form">
+            <!-- Existing contact form -->
+            <form action="YOUR_SERVER_SIDE_ENDPOINT" method="post">
+                <label for="fname">Name</label>
+                <input type="text" id="fname" name="name" placeholder="Your name..">
+            
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your email..">
+            
+                <label for="address">Address</label>
+                <input type="text" id="address" name="address" placeholder="Your address..">
+            
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Your phone number..">
+            
+                <input type="submit" value="Send">
+              </form>
+          </div>
+      <!-- Contact Form Section -->
+      
+
+
+</body>
+</html>
